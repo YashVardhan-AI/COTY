@@ -1,0 +1,5 @@
+tensorflow
+numpy
+streamlit
+tensorflow_hub
+tf-models-official
