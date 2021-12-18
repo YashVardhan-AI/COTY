@@ -11,7 +11,7 @@ st.sidebar.markdown('This is a nlp chatbot that uses blenderbot at its backend m
 
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": st.secrets['api_key']}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
