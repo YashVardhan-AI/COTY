@@ -7,7 +7,7 @@ import lite
 st.title("Chatbot")
 
 st.sidebar.title("NLP Bot")
-st.sidebar.markdown('This is a nlp chatbot that uses blenderbot at its backend made by me for all the lonely folk out there.')
+st.sidebar.markdown('This is a nlp chatbot that uses blenderbot at its backend made by me for all the lonely folk out there.(it has a tensorflow lite model running in the background to Detect the presence of suicidal thoughts.)')
 
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
@@ -18,7 +18,7 @@ def query(payload):
 	return response.json()
 
 def get_text():
-    input_text = st.text_input("You: ","So, what's in your mind")
+    input_text = st.text_input("You: ","Hello, how are you?")
     return input_text 
 
 user_input = get_text()
