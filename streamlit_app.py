@@ -58,10 +58,6 @@ if user_input:
 
     if level == 'Sucide':
         st.session_state.j += 1
+        st.warning('You seem to have suicidal thoughts. Please consult a doctor.')
 
-    if st.session_state.j/st.session_state.i > 0.2 and st.session_state.i>=5:
-        st.warning('You seem to be suicidal. Please consult a doctor.')
-
-    print(st.session_state.i)
-    print(st.session_state.j)
 
