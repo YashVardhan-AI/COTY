@@ -54,7 +54,7 @@ if user_input:
     level = lite.predict(user_input)
     st.session_state.i += 1
 
-
+    print(level)
 
     if level == 'Sucide':
         st.session_state.j += 1
